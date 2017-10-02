@@ -1,16 +1,14 @@
 # DenyTor
 [Security] Application with PowerShell able to isolate Windows servers from DeepWeb, a solution that makes our servers inaccessible from ToR.
 
-DenyTOR es una herramienta ideada y desarrollada por Dani Alonso, experto ciberseguridad y soluciones cloud, y perito judicial informático forense.                                            
-                                                                                      
-Esta herramienta establece conexión con un servicio alojado en Microsoft Azure, que monitorizan en tiempo real la arquitectura de la red TOR. En el análisis identifica todos los nodos de salida generándo una lista completa, la cual este script se encargará de importarla y procesarla desatendidamente.
+DenyTOR is a security tool created by Dani Alonso, expert cybersecurity and cloud solutions, and computer forensic judicial expert.
 
-Una vez obtenida la lista de los nodos de la red TOR, el script creará reglas de entrada y salida en el firewall de Windows según nuestras necesidades.
-Podremos establecer la protección de nuestro servidor cuando se conecte a una red inalámbrica [3], pública [2], o en todas las redes [1]. Para una mayor protección, se recomienda la opción [1]. Puedes cambiar de opción en cualquier momento.
+This tool establishes connection with a service hosted in Microsoft Azure, that monitor in real time the architecture of the TOR network. In the analysis identifies all the output nodes generating a complete list, which this script will be responsible for importing and processing it neglected.
 
-Para observar los resultados, puedes abrir la herramienta 'Firewall de Windows con seguridad avanzada', y ver las reglas de entrada y salida.
+Once the list of nodes in the TOR network is obtained, the script will create input and output rules in the Windows firewall according to our needs. We can establish the protection of our server when connecting to a wireless network [3], public [2], or on all networks [1]. For greater protection, option [1] is recommended. You can change the option at any time.
 
-Ahí encontrarás las reglas DenyTOR-#00x, que albergan una serie de direcciones IP remotas correspondientes a los nodos de salida TOR. 
-No edites manualmente las reglas DenyTOR desde el Firewall de Windows. Se sobreescribirán cuando ejecutes nuevamente otra opción en DenyTOR.
- 
- La opción [4] deshabilitará la protección TOR eliminando todas estas reglas.
+To see the results, you can open the Windows Firewall with Advanced Security tool and see the input and output rules.
+
+There you will find the DenyTOR- # 00x rules, which host a series of remote IP addresses corresponding to the TOR output nodes. Do not edit the DenyTOR rules manually from the Windows Firewall. They will be overwritten when you run another option in DenyTOR again.
+
+Option [4] will disable the TOR protection by eliminating all these rules.
